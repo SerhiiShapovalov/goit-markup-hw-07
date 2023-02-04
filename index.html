@@ -18,14 +18,27 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="site-nav">
           <a href="index.html" class="logo"
             >Web<span class="accent">Studio</span></a
           >
+          <button
+            class="menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
+            <svg class="menu-open-icon" width="32" height="22">
+              <use href="./images/icons.svg#charm_menu-hamburger"></use>
+            </svg>
+          </button>
           <ul class="site-nav list">
             <li><a href="index.html" class="link current">Studio</a></li>
             <li><a href="portfolio.html" class="link">Portfolio</a></li>
@@ -47,109 +60,9 @@
           </ul>
         </address>
       </div>
-
-      <div class="mob-menu is-hidden" data-menu>
-        <button class="menu-open" data-menu-open type="button">
-          <svg class="menu-open-icon" width="32" height="22">
-            <use href="./images/icons.svg#charm_menu-hamburger"></use>
-          </svg>
-        </button>
-        <div class="container">
-          <div class="mob-menu-top">
-            <button class="menu-close" data-menu-close type="button">
-              <svg class="menu-close-icon" width="8" height="8">
-                <use href="./images/icons.svg#close-black"></use>
-              </svg>
-            </button>
-            <nav>
-              <ul class="mob-menu-list list">
-                <li class="mob-menu-item">
-                  <a class="mob-menu-link link" href>Studio</a>
-                </li>
-                <li class="mob-menu-item">
-                  <a class="mob-menu-link link current" href="#Portfolio"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="mob-menu-item">
-                  <a class="mob-menu-link link" href>Contacts</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="mob-menu-bottom">
-            <address class="mob-address">
-              <ul class="mob-address-list list">
-                <li class="mob-address-item">
-                  <a
-                    class="mob-address-mailto link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="mob-address-item">
-                  <a class="mob-address-tel link" href="tel:+110001111111"
-                    >+11 (000) 111-11-11</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <ul class="mob-soc-list list">
-              <li class="mob-soc-item">
-                <a
-                  href=""
-                  class="mob-soc-link link"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  <svg class="mob-soc-icon" width="24" height="24">
-                    <use href="./images/icons.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mob-soc-item">
-                <a
-                  href=""
-                  class="mob-soc-link link"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  <svg class="mob-soc-icon" width="24" height="24">
-                    <use href="./images/icons.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mob-soc-item">
-                <a
-                  href=""
-                  class="mob-soc-link link"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  <svg class="mob-soc-icon" width="24" height="24">
-                    <use href="./images/icons.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mob-soc-item">
-                <a
-                  href=""
-                  class="mob-soc-link link"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  <svg class="mob-soc-icon" width="24" height="24">
-                    <use href="./images/icons.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
+    </header> -->
     <main>
-      <div class="overlay">
+      <!-- <div class="overlay">
         <section class="hero">
           <div class="container">
             <h1 class="hero-title">
@@ -160,9 +73,9 @@
             </button>
           </div>
         </section>
-      </div>
+      </div> -->
 
-      <section class="section principles">
+      <section class="section-principles section">
         <div class="container">
           <h2 class="visually-hidden">Our principles</h2>
           <ul class="principles-list list">
@@ -172,7 +85,7 @@
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">Strategy</h3>
+              <h3 class="principles-title">Strategy</h3>
               <p class="principles-item-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -184,7 +97,7 @@
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="title">Punctuality</h3>
+              <h3 class="principles-title">Punctuality</h3>
               <p class="principles-item-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -196,7 +109,7 @@
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="title">Diligence</h3>
+              <h3 class="principles-title">Diligence</h3>
               <p class="principles-item-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -208,7 +121,7 @@
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title">Technologies</h3>
+              <h3 class="principles-title">Technologies</h3>
               <p class="principles-item-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -217,7 +130,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section-works section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="works-list list">
@@ -260,7 +173,7 @@
                 height="260"
               />
               <div class="team-member">
-                <h3 class="title">Mark Guerrero</h3>
+                <h3 class="team-member-title">Mark Guerrero</h3>
                 <p class="team-item-text">Product Designer</p>
                 <ul class="member-soc-list list">
                   <li class="member-soc-item">
@@ -302,7 +215,7 @@
                 height="260"
               />
               <div class="team-member">
-                <h3 class="title">Tom Ford</h3>
+                <h3 class="team-member-title">Tom Ford</h3>
                 <p class="team-item-text">Frontend Developer</p>
                 <ul class="member-soc-list list">
                   <li class="member-soc-item">
@@ -344,7 +257,7 @@
                 height="260"
               />
               <div class="team-member">
-                <h3 class="title">Camila Garcia</h3>
+                <h3 class="team-member-title">Camila Garcia</h3>
                 <p class="team-item-text">Marketing</p>
                 <ul class="member-soc-list list">
                   <li class="member-soc-item">
@@ -386,7 +299,7 @@
                 height="260"
               />
               <div class="team-member">
-                <h3 class="title">Daniel Wilson</h3>
+                <h3 class="team-member-title">Daniel Wilson</h3>
                 <p class="team-item-text">UI Designer</p>
                 <ul class="member-soc-list list">
                   <li class="member-soc-item">
@@ -427,45 +340,45 @@
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <div class="customers-wrap">
-            <ul class="сustomers-list list">
-              <li class="сustomers-item">
+            <ul class="customers-list list">
+              <li class="customers-item">
                 <a href="" class="customers-link link">
-                  <svg class="link-icon" width="168" height="88">
+                  <svg class="link-icon" width="110" height="56">
                     <use href="./images/icons.svg#first-client"></use>
                   </svg>
                 </a>
               </li>
-              <li class="сustomers-item">
+              <li class="customers-item">
                 <a href="" class="customers-link link">
-                  <svg class="link-icon" width="168" height="88">
+                  <svg class="link-icon" width="110" height="56">
                     <use href="./images/icons.svg#second-client"></use>
                   </svg>
                 </a>
               </li>
-              <li class="сustomers-item">
+              <li class="customers-item">
                 <a href="" class="customers-link link">
-                  <svg class="link-icon" width="168" height="88">
+                  <svg class="link-icon" width="110" height="56">
                     <use href="./images/icons.svg#third-client"></use>
                   </svg>
                 </a>
               </li>
-              <li class="сustomers-item">
+              <li class="customers-item">
                 <a href="" class="customers-link link">
-                  <svg class="link-icon" width="168" height="88">
+                  <svg class="link-icon" width="110" height="56">
                     <use href="./images/icons.svg#fourth-client"></use>
                   </svg>
                 </a>
               </li>
-              <li class="сustomers-item">
+              <li class="customers-item">
                 <a href="" class="customers-link link">
-                  <svg class="link-icon" width="168" height="88">
+                  <svg class="link-icon" width="110" height="56">
                     <use href="./images/icons.svg#fifth-client"></use>
                   </svg>
                 </a>
               </li>
-              <li class="сustomers-item">
+              <li class="customers-item">
                 <a href="" class="customers-link link">
-                  <svg class="link-icon" width="168" height="88">
+                  <svg class="link-icon" width="110" height="56">
                     <use href="./images/icons.svg#sixth-client"></use>
                   </svg>
                 </a>
@@ -475,21 +388,21 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <h2 class="visually-hidden">WebStudio-footer</h2>
         <div class="footer-left-part">
           <a href="index.html" class="footer-logo logo"
             >Web<span class="accent">Studio</span></a
           >
-          <p class="text">
+          <p class="footer-text">
             Increase the flow of customers and<br />sales for your business with
             digital<br />
             marketing & growth solutions.
           </p>
         </div>
         <div class="webstudio-soc">
-          <h3 class="footer-title title">Social media</h3>
+          <h3 class="footer-title">Social media</h3>
           <ul class="webstudio-soc-list list">
             <li class="webstudio-soc-item">
               <a href="" class="webstudio-soc-link link">
@@ -522,7 +435,7 @@
           </ul>
         </div>
         <div class="webstudio-subscribe-overlay">
-          <h3 class="footer-subscribe-title title">Subscribe</h3>
+          <h3 class="footer-title">Subscribe</h3>
           <form class="footer-form">
             <div class="input-subscribe-wrap">
               <input
@@ -544,8 +457,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="btn-modal-close" width="8" height="8">
@@ -629,7 +542,101 @@
           <button class="submit-btn btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="mob-menu-wrap">
+        <div class="mob-menu-top">
+          <button class="menu-toggle js-close-menu" type="button">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#close-black"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link current" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mob-menu-bottom">
+          <address class="mob-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a
+                  class="mob-address-mailto link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mob-address-item">
+                <a class="mob-address-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
     <script src="./js/modal.js"></script>
     <script
       defer
