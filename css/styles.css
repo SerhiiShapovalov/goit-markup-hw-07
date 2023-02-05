@@ -113,26 +113,8 @@ body {
   margin: 0 auto;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 115px;
-  height: 24px;
-  left: 156px;
-  top: 24px;
-}
-
 /* -------MOBILE MENU-CONTAINER----- */
-.menu-container {
+/* .menu-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -178,24 +160,39 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-bottom: 24px;
-}
+} */
 
 /*---------- HEADER------------ */
-/*
+
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header > .container {
   display: flex;
   align-items: center;
+  /* justify-content: space-between; */
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-right: auto;
 }
 
@@ -204,28 +201,16 @@ body {
   gap: var(--second-gap);
 }
 
-.address-list {
-  display: flex;
-  gap: var(--second-gap);
-}
-
-*/
-
-/* .header .logo {
-  margin-right: 76px;
-} */
-
 .accent {
   color: #2e2f42;
 }
 
-/**
 .site-nav .link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: var(--typical-lh);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
   color: #2e2f42;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -242,14 +227,14 @@ body {
   background-color: #ffffff;
 }
 
-.site-nav .link.current::after {
+.site-nav.list .link.current::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 4px;
   background-color: var(--pressed-state-color);
   left: 0;
-  bottom: -27px;
+  bottom: -26px;
   border-radius: 2px;
 }
 
@@ -269,6 +254,19 @@ body {
   color: #4d5ae5;
 }
 
+.menu-open {
+  width: 32px;
+  height: 22px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-open-icon {
+  stroke: #2e2f42;
+}
+
+/*
 .hero {
   color: #ffffff;
   padding-top: 188px;
@@ -928,23 +926,6 @@ label[for="user-name"] {
   justify-content: center;
 }
 
-.menu-open {
-  width: 32px;
-  height: 22px;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
-
-.menu-open-icon {
-  stroke: #2E2F42;
-}
-
-@media (min-width: 480px) {
-  .menu-open {
-    display: none;
-  }
-}
 
 @media (max-width: 480px) {
   .tablet-container {
@@ -1111,6 +1092,9 @@ label[for="user-name"] {
   .container {
     max-width: 428px;
   }
+  .menu-open {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1181,6 +1165,9 @@ label[for="user-name"] {
   .principles-item-text {
     font-weight: 400;
   }
+  .header {
+    padding-bottom: 28px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1198,10 +1185,47 @@ label[for="user-name"] {
     max-width: 168px;
     /* width: calc((100% - 24*2px) / 3); */
   }
+  .logo {
+    line-height: 1.33;
+  }
+  .header .logo {
+    margin-right: 123px;
+  }
+  .header {
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .customers-list {
     flex-wrap: nowrap;
+  }
+  .header {
+    padding-bottom: 28px;
+  }
+  .address-list {
+    display: flex;
+    gap: var(--second-gap);
+  }
+  .site-nav.list .link.current::after {
+    bottom: -32px;
+  }
+  .header .logo {
+    margin-right: 76px;
+  }
+  .site-nav .link {
+    font-size: 16px;
+    line-height: var(--typical-lh);
+    letter-spacing: 0.02em;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav.list {
+    display: none;
+  }
+  .address-list {
+    display: none;
   }
 }
