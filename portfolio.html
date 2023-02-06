@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
@@ -18,8 +18,12 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
-  <body class="site-body">
+  <body>
     <header class="header">
       <div class="container header-container">
         <nav class="site-nav">
@@ -46,6 +50,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -289,51 +303,53 @@
     <footer class="footer">
       <div class="footer-container container">
         <h2 class="visually-hidden">WebStudio-footer</h2>
-        <div class="footer-left-part">
-          <a href="index.html" class="footer-logo logo"
-            >Web<span class="accent">Studio</span></a
-          >
-          <p class="text">
-            Increase the flow of customers and<br />sales for your business with
-            digital<br />
-            marketing & growth solutions.
-          </p>
-        </div>
-        <div class="webstudio-soc">
-          <h3 class="footer-title">Social media</h3>
-          <ul class="webstudio-soc-list list">
-            <li class="webstudio-soc-item">
-              <a href="" class="webstudio-soc-link link">
-                <svg class="webstudio-soc-icon" width="24" height="24">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="webstudio-soc-item">
-              <a href="" class="webstudio-soc-link link">
-                <svg class="webstudio-soc-icon" width="24" height="24">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="webstudio-soc-item">
-              <a href="" class="webstudio-soc-link link">
-                <svg class="webstudio-soc-icon" width="24" height="24">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="webstudio-soc-item">
-              <a href="" class="webstudio-soc-link link">
-                <svg class="webstudio-soc-icon" width="24" height="24">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-wrap">
+          <div class="footer-first-part">
+            <a href="index.html" class="footer-logo logo"
+              >Web<span class="accent">Studio</span></a
+            >
+            <p class="text">
+              Increase the flow of customers and<br />sales for your business
+              with digital<br />
+              marketing & growth solutions.
+            </p>
+          </div>
+          <div class="webstudio-soc">
+            <h3 class="footer-title title">Social media</h3>
+            <ul class="webstudio-soc-list list">
+              <li class="webstudio-soc-item">
+                <a href="" class="webstudio-soc-link link">
+                  <svg class="webstudio-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="webstudio-soc-item">
+                <a href="" class="webstudio-soc-link link">
+                  <svg class="webstudio-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="webstudio-soc-item">
+                <a href="" class="webstudio-soc-link link">
+                  <svg class="webstudio-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="webstudio-soc-item">
+                <a href="" class="webstudio-soc-link link">
+                  <svg class="webstudio-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="webstudio-subscribe-overlay">
-          <h3 class="footer-title">Subscribe</h3>
+          <h3 class="footer-subscribe-title title">Subscribe</h3>
           <form class="footer-form">
             <div class="input-subscribe-wrap">
               <input

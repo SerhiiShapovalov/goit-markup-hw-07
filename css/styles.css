@@ -690,6 +690,7 @@ body {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+
 .footer-logo {
   margin-bottom: 16px;
 }
@@ -703,8 +704,12 @@ body {
   color: #e7e9fc;
 }
 
-.footer-first-part {
+.footer-first-part {  
   max-width: 264px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer .title {
@@ -890,10 +895,9 @@ label[for="user-name"] {
   margin-left: auto;
   margin-right: auto;
 }
- .privacy-policy-link {
+.privacy-policy-link {
   color: #4d5ae5;
 }
-
 
 /* Ниже идет то, что добавлял вначале ДЗ№7
 до просмотра уроков */
