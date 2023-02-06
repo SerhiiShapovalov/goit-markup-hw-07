@@ -4,9 +4,6 @@
   .container {
     max-width: 428px;
   }
-  .menu-open {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -16,18 +13,25 @@
   /* .team-item {
     width: calc((100% - 24px) / 2);
   } */
+  .menu-open {
+    display: none;
+  }
   .hero {
     padding-bottom: 108px;
   }
   .overlay {
     max-width: 768px;
     height: 436px;
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/people-office-1.jpg");
+    background-image: var(--bg-gradient),
+      url("../images/people-office-tablet.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: var(--bg-gradient),
+        url(../images/people-office-tablet-2x.jpg);
+    }
   }
   .hero-title {
     font-size: 56px;
@@ -81,7 +85,7 @@
   .footer-wrap {
     display: flex;
     gap: 24px;
-  }    
+  }
   .subscribe-input {
     width: 264px;
   }
@@ -89,6 +93,9 @@
     display: flex;
     align-items: center;
     gap: 24px;
+  }
+  .modal {
+    width: 408px;
   }
 }
 
@@ -113,12 +120,16 @@
     max-width: 1440px;
     height: 600px;
     background-color: #2e2f42;
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/people-office-1.jpg");
+    background-image: var(--bg-gradient),
+      url("../images/people-office-desktop.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: var(--bg-gradient),
+        url(../images/people-office-desktop-2x.jpg);
+    }
   }
   .hero-title {
     font-weight: 700;
@@ -180,7 +191,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
-.footer-wrap {
+  .footer-wrap {
     gap: 120px;
   }
   .webstudio-subscribe-overlay {
@@ -191,12 +202,8 @@
     align-items: center;
     gap: 24px;
   }
-}
-
-@media screen and (max-width: 479px) {
-  .footer-logo{
-    margin-left: auto;
-    margin-right: auto;
+  .modal {
+    height: 584px;
   }
 }
 
@@ -210,12 +217,19 @@
   .hero-title {
     text-transform: capitalize;
   }
+  .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .footer .title {
     text-align: center;
   }
   .online-btn {
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer-first-part {
+    margin-bottom: 72px;
   }
   .subscribe-input {
     margin-bottom: 16px;
