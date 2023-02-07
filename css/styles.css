@@ -119,6 +119,14 @@ body {
 }
 
 /* -------MOBILE MENU-CONTAINER----- */
+.mob-menu-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -147,12 +155,12 @@ body {
   overflow: auto;
 }
 
-.menu-container .menu-toggle {
+/* .menu-container .menu-toggle {
   position: absolute;
   top: 40px;
   right: 40px;
   color: #2e2f42;
-}
+} */
 
 .menu-toggle {
   width: 24px;
@@ -164,7 +172,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -176,6 +184,12 @@ body {
   border: none;
   fill: #ffffff;
 }
+
+/* .mob-menu-top{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+} */
 
 .mob-soc-list {
   display: flex;
@@ -209,6 +223,54 @@ body {
 .mob-soc-link:focus {
   background-color: #404bbf;
 }
+
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.mob-menu-link:hover,
+.menu-toggle:focus {
+  color: #404BBF;  
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-menu-list {
+  margin-bottom: 284px;
+}
+
+.mob-address-tel {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.mob-address-mailto {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  color: #434455; 
+}
+
+.mob-address {
+  margin-bottom: 48px;
+}
+
+
 
 /*---------- HEADER------------ */
 
@@ -918,35 +980,3 @@ label[for="user-name"] {
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
 }
-
-/*Ниже от Данилко */
-
-/* .mob-menu-list {
-  margin-bottom: 64px;
-}
-
-.mob-menu-item:not(:last-child) {
-  margin-bottom: 24px;
-}
-.mob-menu-link {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: calc(25 / 18);
-  letter-spacing: 0.1em;
-  color: #303030;
-}
-
-.mob-menu-tel {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: calc(25 / 18);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #303030;
-  display: inline-block;
-  margin-bottom: 24px;
-}
-.mob-menu-btn {
-  display: block;
-  margin-bottom: 64px;
-} */
