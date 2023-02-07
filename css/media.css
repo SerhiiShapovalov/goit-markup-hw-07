@@ -241,6 +241,9 @@
   .webstudio-soc-list {
     margin-bottom: 72px;
   }
+  .mob-menu-link.contacts {
+    color: #404bbf;
+  }
 }
 
 @media screen and (max-width: 1199px) {

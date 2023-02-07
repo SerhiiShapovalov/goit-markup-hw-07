@@ -233,8 +233,8 @@ body {
 }
 
 .mob-menu-link:hover,
-.menu-toggle:focus {
-  color: #404BBF;  
+.mob-menu-link:focus {
+  color: #404bbf;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -242,7 +242,7 @@ body {
 }
 
 .mob-menu-list {
-  margin-bottom: 284px;
+  margin-bottom: auto;
 }
 
 .mob-address-tel {
@@ -263,14 +263,12 @@ body {
   font-size: 20px;
   line-height: 1.2em;
   letter-spacing: 0.02em;
-  color: #434455; 
+  color: #434455;
 }
 
 .mob-address {
   margin-bottom: 48px;
 }
-
-
 
 /*---------- HEADER------------ */
 
