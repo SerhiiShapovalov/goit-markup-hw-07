@@ -30,7 +30,7 @@
     (min-resolution: 2dppx) {
     .hero-wrap {
       background-image: var(--bg-gradient),
-        url(../images/people-office-tablet-2x.jpg);
+        url(../images/people-office-tablet@2x.jpg);
     }
   }
   .hero-title {
@@ -97,6 +97,31 @@
   .modal {
     width: 408px;
   }
+  /* -------PORTFOLIO TABLET------ */
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .portfolio-btn {
+    padding: 12px 24px;
+  }
+  .portfolio-fiter-list {
+    justify-content: center;
+    gap: var(--first-gap);
+    margin-bottom: 64px;
+  }
+  /* PORTFOLIO CARD SET */
+  .portfolio-list {
+    row-gap: 72px;
+    column-gap: var(--first-gap);
+  }
+  .portfolio-item {
+    width: calc((100% - var(--first-gap)) / 2);
+  }
+  /* PORTFOLIO CARD */
+  .card-thumb-text {
+    padding: 40px 28px 164px 32px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -128,7 +153,7 @@
     (min-resolution: 2dppx) {
     .hero-wrap {
       background-image: var(--bg-gradient),
-        url(../images/people-office-desktop-2x.jpg);
+        url(../images/people-office-desktop@2x.jpg);
     }
   }
   .hero-title {
@@ -205,6 +230,26 @@
   .modal {
     height: 584px;
   }
+  /* -------PORTFOLIO DESKTOP------ */
+  .portfolio-fiter-list {
+    margin-bottom: 72px;
+  }
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+  /* PORTFOLIO CARD SET */
+  .portfolio-list {
+    row-gap: 48px;
+    column-gap: var(--first-gap);
+  }
+  .portfolio-item {
+    width: calc((100% - 2 * var(--first-gap)) / 3);
+  }
+  /* PORTFOLIO CARD */
+  .card-thumb-text {
+    padding: 40px 32px 164px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -243,6 +288,11 @@
   }
   .mob-menu-link.contacts {
     color: #404bbf;
+  }
+  .portfolio-fiter-list {
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: var(--first-gap);
   }
 }
 
