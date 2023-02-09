@@ -696,6 +696,36 @@ body {
   border-color: #f4f4fd;
 }
 
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.anime {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.hide {
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  0% {
+    visibility: visible;
+  }
+
+  100% {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    max-width: 0;
+    font-size: 0;
+    margin: 0;
+  }
+}
+
 /*---------- MODAL------------ */
 .backdrop.is-hidden {
   visibility: hidden;
