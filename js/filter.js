@@ -1,7 +1,7 @@
 // Write JavaScript here
 function app() {
   const buttons = document.querySelectorAll(".portfolio-btn");
-  const cards = document.querySelectorAll(".card");
+  const cards = document.querySelectorAll(".portfolio-item");
 
   function filter(category, items) {
     items.forEach((item) => {
